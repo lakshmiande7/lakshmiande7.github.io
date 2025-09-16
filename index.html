@@ -1,48 +1,180 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lakshmi Ande</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body{margin:0;font-family:system-ui,Arial;background:#0b0f14;color:#e6eef7;line-height:1.6}
-      .wrap{max-width:900px;margin:0 auto;padding:40px 18px}
-      h1{margin:0 0 6px} .muted{color:#9fb0c0}
-      .card{background:#0f1620;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;margin:12px 0}
-      .grid{display:grid;gap:12px} @media(min-width:860px){.grid.cols-2{grid-template-columns:1fr 1fr}}
-      a{color:#66d9e8;text-decoration:none} a:hover{text-decoration:underline}
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <h1>Lakshmi Ande</h1>
-      <div class="muted">Data Scientist • Data Analyst — Huntsville, AL</div>
-      <p>
-        <a href="mailto:lakshmiande20@gmail.com">lakshmiande20@gmail.com</a> ·
-        <a href="https://linkedin.com/in/lakshmi-ande-060690273/" target="_blank">LinkedIn</a> ·
-        <a href="https://github.com/lakshmiande7" target="_blank">GitHub</a>
-      </p>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lakshmi Ande — Portfolio</title>
+  <meta name="description" content="Portfolio of Lakshmi Ande — Data Scientist / Data Analyst" />
+  <style>
+    :root{
+      --bg:#0b0f14; --panel:#0f1620; --text:#e6eef7; --muted:#9fb0c0; --accent:#66d9e8;
+      --bd:1px solid rgba(255,255,255,.12); --r:16px; --max:1000px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 60px}
+    header{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:center;margin-bottom:24px}
+    .avatar{width:88px;height:88px;border-radius:50%;border:2px solid var(--accent);background:#13202c;display:grid;place-items:center;font-weight:800;color:#7fc9d6}
+    h1{margin:0;font-size:clamp(24px,4vw,36px)}
+    .role{color:var(--muted);margin-top:2px}
+    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;color:var(--muted)}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:var(--bd);border-radius:999px;background:rgba(255,255,255,.03)}
+    section{margin-top:28px}
+    h2{font-size:clamp(18px,3vw,24px);margin:0 0 10px}
+    .card{background:var(--panel);border:var(--bd);border-radius:var(--r);padding:14px}
+    .grid{display:grid;gap:12px}
+    @media(min-width:860px){.grid.cols-2{grid-template-columns:1fr 1fr}.grid.cols-3{grid-template-columns:1fr 1fr 1fr}}
+    .item h3{margin:0 0 4px;font-size:16px}
+    .sub{color:var(--muted);font-size:14px}
+    ul{margin:8px 0 0 18px}
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:.95rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="avatar" aria-hidden="true">LA</div>
+      <div>
+        <h1>Lakshmi Ande</h1>
+        <div class="role">Data Scientist • Data Analyst</div>
+        <div class="links">
+          <span class="pill">📍 Huntsville, AL</span>
+          <a class="pill" href="tel:+12013494008">📞 201-349-4008</a>
+          <a class="pill" href="mailto:lakshmiande20@gmail.com">✉️ lakshmiande20@gmail.com</a>
+          <a class="pill" href="https://www.linkedin.com/in/lakshmi-ande-060690273/" target="_blank" rel="noopener">in/ lakshmi-ande</a>
+          <a class="pill" href="https://github.com/lakshmiande7" target="_blank" rel="noopener">GitHub: lakshmiande7</a>
+        </div>
+      </div>
+    </header>
 
+    <!-- About -->
+    <section>
       <h2>About</h2>
-      <div class="card">Data professional focused on pipelines, ML, and actionable insights.</div>
+      <div class="card">
+        Data professional with experience in advanced analytics, focused on building pipelines,
+        applying machine learning techniques, and generating actionable insights.
+      </div>
+    </section>
 
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Programming</h3>
+          Python, R, SQL • NumPy, Pandas • scikit-learn, TensorFlow, PyTorch
+        </div>
+        <div class="card">
+          <h3>ML & AI</h3>
+          Supervised / Unsupervised • Deep Learning • NLP (Sentiment) • Time Series • LLMs
+        </div>
+        <div class="card">
+          <h3>Visualization</h3>
+          Tableau, Power BI, Matplotlib, Excel, Google Sheets, PowerPoint
+        </div>
+        <div class="card">
+          <h3>Data & Cloud</h3>
+          ETL • Data Pipelines • Jupyter • Twitter API • AWS & Azure (familiar)
+        </div>
+        <div class="card">
+          <h3>Certificates</h3>
+          Google (Data Analytics / SQL / Spreadsheets) • IBM (Database / Python / Data Science — Honors) • Google Ads (Digital Marketing)
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
       <h2>Experience</h2>
       <div class="grid">
-        <div class="card"><strong>Supervue AI — Data Scientist</strong><br>ML models in Python; dashboards for impact.</div>
-        <div class="card"><strong>Sm23 — Analyst</strong><br>NLP sentiment (Twitter API); Tableau dashboards.</div>
+        <div class="card item">
+          <h3>Supervue AI — Data Scientist (Marketing & Product)</h3>
+          <div class="sub">Saratoga, CA • Jan 2024</div>
+          <ul>
+            <li>Developed ML models in Python to predict user behavior and product outcomes.</li>
+            <li>Built dashboards/visualizations to communicate model performance and business impact.</li>
+            <li>Applied classification techniques to improve predictive accuracy and insights.</li>
+          </ul>
+        </div>
+        <div class="card item">
+          <h3>Sm23 — Analyst</h3>
+          <div class="sub">Huntsville, AL • Jan 2023 – Dec 2023</div>
+          <ul>
+            <li>Performed NLP sentiment analysis using Python and Twitter API.</li>
+            <li>Created Tableau dashboards to visualize engagement and sentiment trends.</li>
+            <li>Built an end-to-end pipeline: collection → cleaning → analysis → reporting.</li>
+          </ul>
+        </div>
+        <div class="card item">
+          <h3>University of Alabama in Huntsville — Graduate Teaching Assistant</h3>
+          <div class="sub">Huntsville, AL • Jan 2023 – Dec 2023</div>
+          <ul>
+            <li>Supported ML courses and labs; guided students on foundational calculus concepts.</li>
+            <li>Assisted with academic research in Fundamental & Advanced Machine Learning.</li>
+          </ul>
+        </div>
+        <div class="card item">
+          <h3>AR Inc (Family Owned) — Manager</h3>
+          <div class="sub">Andhra Pradesh, India • Aug 2017 – Jan 2022</div>
+          <ul>
+            <li>Led digital marketing initiatives across social media, Google Ads, and Meta Ads.</li>
+            <li>Built and maintained the company website; created and handled SQL database.</li>
+            <li>Planned and optimized campaigns; tracked performance and delivered insights.</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
+    <!-- Projects -->
+    <section>
       <h2>Projects</h2>
-      <div class="grid cols-2">
-        <div class="card"><strong>NFL Sentiment Tool</strong><br>Social sentiment analysis.</div>
-        <div class="card"><strong>University Dashboards</strong><br>Course evaluation dashboards.</div>
+      <div class="grid cols-3">
+        <div class="card item">
+          <h3>NFL Sentiment Tool</h3>
+          <p>NLP toolkit for audience sentiment analysis.</p>
+          <a href="#" target="_blank" rel="noopener">Read more →</a>
+        </div>
+        <div class="card item">
+          <h3>University Dashboards</h3>
+          <p>Course evaluation dashboards using Google Apps & automation tools.</p>
+          <a href="#" target="_blank" rel="noopener">Read more →</a>
+        </div>
+        <div class="card item">
+          <h3>Bluetooth Pick & Place Robot</h3>
+          <p>Bluetooth-operated robot showcasing basic robotics, wireless control, and integration.</p>
+          <a href="#" target="_blank" rel="noopener">Demo/Docs →</a>
+        </div>
       </div>
+    </section>
 
+    <!-- Education -->
+    <section>
       <h2>Education</h2>
-      <div class="card">M.S., Business Analytics — UAH (Dec 2023)</div>
+      <div class="grid cols-2">
+        <div class="card item">
+          <h3>University of Alabama in Huntsville</h3>
+          <div class="sub">M.S., Business Analytics — Dec 2023</div>
+        </div>
+      </div>
+    </section>
 
-      <p class="muted">© <span id="y"></span> Lakshmi Ande</p>
-    </div>
-    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-  </body>
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        Have a project or role in mind? Reach me at
+        <a href="mailto:lakshmiande20@gmail.com">lakshmiande20@gmail.com</a>
+        or <a href="tel:+12013494008">201-349-4008</a>.
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Lakshmi Ande • Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
 </html>
