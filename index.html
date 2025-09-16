@@ -1,1 +1,48 @@
-PORTFOLIO
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lakshmi Ande</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body{margin:0;font-family:system-ui,Arial;background:#0b0f14;color:#e6eef7;line-height:1.6}
+      .wrap{max-width:900px;margin:0 auto;padding:40px 18px}
+      h1{margin:0 0 6px} .muted{color:#9fb0c0}
+      .card{background:#0f1620;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;margin:12px 0}
+      .grid{display:grid;gap:12px} @media(min-width:860px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+      a{color:#66d9e8;text-decoration:none} a:hover{text-decoration:underline}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Lakshmi Ande</h1>
+      <div class="muted">Data Scientist • Data Analyst — Huntsville, AL</div>
+      <p>
+        <a href="mailto:lakshmiande20@gmail.com">lakshmiande20@gmail.com</a> ·
+        <a href="https://linkedin.com/in/lakshmi-ande-060690273/" target="_blank">LinkedIn</a> ·
+        <a href="https://github.com/lakshmiande7" target="_blank">GitHub</a>
+      </p>
+
+      <h2>About</h2>
+      <div class="card">Data professional focused on pipelines, ML, and actionable insights.</div>
+
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card"><strong>Supervue AI — Data Scientist</strong><br>ML models in Python; dashboards for impact.</div>
+        <div class="card"><strong>Sm23 — Analyst</strong><br>NLP sentiment (Twitter API); Tableau dashboards.</div>
+      </div>
+
+      <h2>Projects</h2>
+      <div class="grid cols-2">
+        <div class="card"><strong>NFL Sentiment Tool</strong><br>Social sentiment analysis.</div>
+        <div class="card"><strong>University Dashboards</strong><br>Course evaluation dashboards.</div>
+      </div>
+
+      <h2>Education</h2>
+      <div class="card">M.S., Business Analytics — UAH (Dec 2023)</div>
+
+      <p class="muted">© <span id="y"></span> Lakshmi Ande</p>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </body>
+</html>
